@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 	tur = tur->next;
 	fas = fas->next->next;
 
-	while (tur && fas && hare->next)
+	while (tur && fas && fas->next)
 	{
 		if (tur == fas)
 			return (1);
