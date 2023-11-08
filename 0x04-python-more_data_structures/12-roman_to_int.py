@@ -6,6 +6,6 @@ def roman_to_int(roman_string):
     number = 0
     digits = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     for i in reversed(roman_string):
-        number = didits[r]
+        number = didits[i]
         sum += number if sum < number * 5 else -number
     return sum
