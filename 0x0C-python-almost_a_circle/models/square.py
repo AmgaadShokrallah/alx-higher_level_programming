@@ -26,7 +26,7 @@ class Square(Rectangle):
         self.height = value
 
     def __update(self, id=None, size=None, x=None, y=None):
-        '''Update the class Rectangle by adding the public method attributes.'''
+        '''Update the class Rectangle by adding public method attributes.'''
         if id is not None:
             self.id = id
         if size is not None:
@@ -37,7 +37,7 @@ class Square(Rectangle):
             self.y = y
 
     def update(self, *args, **kwargs):
-        '''Update the class Rectangle via a key/value argument to attributes.'''
+        '''Update the class Rectangle a key/value argument to attributes.'''
         if args:
             self.__update(*args)
         elif kwargs:
